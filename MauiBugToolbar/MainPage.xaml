@@ -3,6 +3,13 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MauiBugToolbar.MainPage">
 
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="AAA" Order="Primary" />
+        <ToolbarItem Text="BBB" Order="Primary" />
+        <ToolbarItem Text="CCC" Order="Secondary" />
+        <ToolbarItem Text="DDD" Order="Secondary" />
+    </ContentPage.ToolbarItems>
+    
     <ContentPage.Content>
         <ScrollView>
             <VerticalStackLayout
@@ -11,7 +18,7 @@
                 VerticalOptions="Center">
 
                 <Label
-                    Text="Hello, World!"
+                    Text="If MAUI works, you will see two primary items and two secondary items in the toolbar."
                     SemanticProperties.HeadingLevel="Level1"
                     FontSize="32"
                     HorizontalOptions="Center" />
